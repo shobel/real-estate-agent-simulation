@@ -6,9 +6,11 @@ and doing some processing.
 
 Seller.cpp: This file forks 4 sellers that send their house listing info to the two agents. Later they 
 receive information about which buyers want to buy their house.
+
 Agent.cpp: This file forks 2 agents that are responsible for receiving the information from the sellers,
 relaying that information to the buyers, then receiving the desired houses from the buyers, deciding which
 buyers can buy which houses and relaying that information to both the buyers and sellers.
+
 Buyers.cpp: This file forks 5 buyers, who listen over UDP for messages from the agents. Then they go through
 the messages and decide which houses they can buy and send that information back to the agents over TCP.
 Then finally they listen on their TCP port for whether they were able to buy the house(s) or not.
