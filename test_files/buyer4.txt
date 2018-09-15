@@ -1,0 +1,2 @@
+Square footage: 3000
+Budget: 450000
